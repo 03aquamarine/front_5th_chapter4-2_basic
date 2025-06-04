@@ -7,9 +7,15 @@
     <title>Home - Tech Shop</title>
     <link
       href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap"
-      rel="stylesheet"
+      rel="preconnect"
+      crossorigin
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="preload"
+      as="style"
+      href="/css/styles.css"
+      onload="this.rel='stylesheet'"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
     <!-- Google Tag Manager -->
     <script>
@@ -84,30 +90,26 @@
     </header>
 
     <section class="hero">
-      <img
-        class="desktop"
-        src="images/Hero_Desktop.webp"
-        alt="desktop"
-        loading="lazy"
-        width="864"
-        height="402"
-      />
-      <img
-        class="mobile"
-        src="images/Hero_Mobile.webp"
-        alt="mobile"
-        loading="lazy"
-        width="400"
-        height="400"
-      />
-      <img
-        class="tablet"
-        src="images/Hero_Tablet.webp"
-        alt="tablet"
-        loading="lazy"
-        width="500"
-        height="401"
-      />
+      <picture>
+        <source
+          sizes="(min-width: 1025px) 100vw, 50vw"
+          srcset="images/Hero_Desktop.webp"
+        />
+
+        <source
+          sizes="(min-width: 601px) 100vw, 30vw"
+          srcset="images/Hero_Tablet.webp"
+        />
+
+        <img
+          class="mobile"
+          src="images/Hero_Mobile.webp"
+          alt="mobile"
+          loading="lazy"
+          width="400"
+          height="400"
+        />
+      </picture>
 
       <div class="hero-content">
         <div class="container">
@@ -132,6 +134,7 @@
             <div class="product-picture">
               <img
                 src="images/vr1.webp"
+                srcset="images/vr1.webp 1x, images/vr1@2x.webp 2x"
                 alt="product: Penom Case"
                 loading="lazy"
               />
@@ -150,6 +153,7 @@
             <div class="product-picture">
               <img
                 src="images/vr2.webp"
+                srcset="images/vr2.webp 1x, images/vr2@2x.webp 2x"
                 alt="product: Noise Cancelling Headphone"
                 loading="lazy"
               />
@@ -168,6 +172,7 @@
             <div class="product-picture">
               <img
                 src="images/vr3.webp"
+                srcset="images/vr3.webp 1x, images/vr3@2x.webp 2x"
                 alt="product: Canon Digital SLR EOS Rebel T6"
                 loading="lazy"
               />
@@ -248,8 +253,8 @@
 
     <a href="#" id="open_preferences_center">Update cookies preferences</a>
 
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/products.js"></script>
+    <script type="text/javascript" src="/js/main.js" defer></script>
+    <script type="text/javascript" src="/js/products.js" defer></script>
   </body>
 
   <script type="text/javascript" charset="UTF-8">
