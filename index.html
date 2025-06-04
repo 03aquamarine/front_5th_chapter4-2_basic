@@ -91,14 +91,13 @@
 
     <section class="hero">
       <picture>
-        <source
-          sizes="(min-width: 1025px) 100vw, 50vw"
-          srcset="images/Hero_Desktop.webp"
-        />
-
-        <source
-          sizes="(min-width: 601px) 100vw, 30vw"
-          srcset="images/Hero_Tablet.webp"
+        <img
+          class="desktop"
+          src="images/Hero_Desktop.webp"
+          alt="desktop"
+          loading="lazy"
+          width="1500"
+          height="699"
         />
 
         <img
@@ -108,6 +107,15 @@
           loading="lazy"
           width="400"
           height="400"
+        />
+
+        <img
+          class="tablet"
+          src="images/Hero_Tablet.webp"
+          alt="tablet"
+          loading="lazy"
+          width="500"
+          height="401"
         />
       </picture>
 
@@ -134,9 +142,10 @@
             <div class="product-picture">
               <img
                 src="images/vr1.webp"
-                srcset="images/vr1.webp 1x, images/vr1@2x.webp 2x"
                 alt="product: Penom Case"
                 loading="lazy"
+                width="100"
+                height="100"
               />
             </div>
             <div class="product-info">
@@ -153,9 +162,10 @@
             <div class="product-picture">
               <img
                 src="images/vr2.webp"
-                srcset="images/vr2.webp 1x, images/vr2@2x.webp 2x"
                 alt="product: Noise Cancelling Headphone"
                 loading="lazy"
+                width="100"
+                height="100"
               />
             </div>
             <div class="product-info">
@@ -172,9 +182,10 @@
             <div class="product-picture">
               <img
                 src="images/vr3.webp"
-                srcset="images/vr3.webp 1x, images/vr3@2x.webp 2x"
                 alt="product: Canon Digital SLR EOS Rebel T6"
                 loading="lazy"
+                width="100"
+                height="100"
               />
             </div>
             <div class="product-info">
