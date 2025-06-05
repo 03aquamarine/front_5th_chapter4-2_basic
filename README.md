@@ -31,7 +31,7 @@
 - Core Web Vitals (2024)
   | 메트릭 | 설명 | 개선 전 | 개선 후 | 개선율 |
   | ------ |:----:|:------:|:---------------:|:------:|
-  | LCP | Largest Contentful Paint | 14.48s | 2.48s | &downarrow; 12s |
+  | LCP | Largest Contentful Paint | 14.48s | 2.40s | &downarrow; 12.08s |
 
 - PageSpeed 분석 이미지
   - 개선 전
